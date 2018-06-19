@@ -8,12 +8,16 @@ define = function(..., file="", delim=c("`","'"), append=FALSE) {
                     strlist,
                     paste(
                           'define(',
+                          delim[1],
                           names(vars)[i],
-                          ', `',
+                          delim[2],
+                          ', ',
+                          delim[1],
                           vars[i],
-                          "')",
+                          delim[2],
+                          ")",
                           sep='')
                     )
     }
-    writeLines(strlist, con="vars.m4")
+    cat(strlist, file=file, sep="\n", fill=FALSE, append=append)
 }
