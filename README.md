@@ -17,11 +17,11 @@ operations involved, it would be more practical to coordinate the steps through
 `make`.
 
 To follow the `Makefile` here is the best way to figure out how `m4` can be
-integrated here. It allows many variations of this theme indeed.
+integrated in this approach.
 
 Here `m4` is basically avoiding the use of `knitr`[1], but the intent is not to
 provide an alternative for this package. But the fact that `m4` can be used in
-this kind of workflow seems interesting, and might add more flexibility for
+this kind of workflow seems interesting, and might add more flexibility to
 some workflows.
 
 [1]: https://yihui.name/en/2012/06/enjoyable-reproducible-research/
